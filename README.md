@@ -1,7 +1,7 @@
 # todo-project
 
 # Home Page
-![todo-WireFrame](/toDo-wireFrame.png)
+![todo-WireFrame](./assets/toDo-wireFrame.png)
 
 # About Us
-![todo-WireFrame](./toDo-wireframe-About.png)
+![todo-WireFrame](./assets/toDo-wireframe-About.png)
