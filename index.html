@@ -3,39 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>toDo-List</title>
   </head>
   <body>
     <header>
       <ul>
-        <li><img style="width: 100px" src="./assets/todoList.png" alt="" /></li>
-        <li>toDo-List</li>
-        <li><a href="./about.html" target="_blank">About</a></li>
+        <li class="img"><img src="./assets/todoList.png" alt="" /></li>
+        <li><a href="./index.html" target="_blank">Home Page</a></li>
+        <li><a href="./about.html" target="_blank">About Us</a></li>
       </ul>
     </header>
-    <hr />
+
     <main>
-      <table border="1">
+      <h1 class="tdl">To Do List</h1>
+      <table>
         <tr>
           <th>Tasks</th>
           <th>Status</th>
         </tr>
         <tr>
-          <td>task 1</td>
-          <td><input type="checkbox" checked /></td>
+          <td class="td">
+            Learn JS
+            <input type="checkbox" checked />
+          </td>
+          <td>
+            <div class="green"></div>
+          </td>
         </tr>
         <tr>
-          <td>task 2</td>
-          <td><input type="checkbox" /></td>
+          <td class="td">
+            Create HTML Page
+            <input type="checkbox" />
+          </td>
+          <td>
+            <div class="red"></div>
+          </td>
         </tr>
         <tr>
-          <td>task 3</td>
-          <td><input type="checkbox" checked /></td>
+          <td class="td">
+            Walk the Dog
+            <input type="checkbox" />
+          </td>
+          <td>
+            <div class="red"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td">
+            Watch the Match
+            <input type="checkbox" />
+          </td>
+          <td>
+            <div class="red"></div>
+          </td>
         </tr>
       </table>
     </main>
-    <hr />
-    <footer>
+
+    <footer class="home">
       <ul>
         <li>Copyright &copy;</li>
         <li>Contact Us: +969 0000</li>
