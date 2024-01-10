@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+img {
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li:not(.img) {
+    padding: 15px 40px; 
+}
+ul li.img {
+    padding: 0px 40px; 
+}
+
+ ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: lightgray;
+}
+
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tdl {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+table {
+    font-size: 20px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+table td .green {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(25, 202, 25);
+    margin: auto;
+}
+table td .red {
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    margin: auto;
+}
+
+table td, table th {
+    width: 300px;
+    height: 50px;
+    border: 1px solid grey;
+}
+
+.td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+footer.home {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.sectionOne {
+    width: fit-content;
+    margin: 0px auto 50px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.sectionOne img {
+    width: 150px;
+}
+
+.sectionOne .info h1 {
+    color: crimson;
+}
+
+.sectionOne .info p {
+    border: 1px solid gray;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form h1 {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    color: firebrick;
+}
+
+form label {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+form div input {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+form .textarea textarea {
+    resize: none;
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: lightgray;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+
+
