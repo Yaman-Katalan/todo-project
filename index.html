@@ -3,70 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>toDo-List</title>
   </head>
   <body>
     <header>
-      <ul>
-        <li class="img"><img src="./assets/todoList.png" alt="" /></li>
-        <li><a href="./index.html" target="_blank">Home Page</a></li>
-        <li><a href="./about.html" target="_blank">About Us</a></li>
-      </ul>
+      <div class="container">
+        <i class="fa-regular fa-square-check"></i>
+        <ul>
+          <li><a href="./index.html" target="_blank">Home Page</a></li>
+          <li><a href="./about.html" target="_blank">About Us</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main>
-      <h1 class="tdl">To Do List</h1>
-      <table>
-        <tr>
-          <th>Tasks</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td class="td">
-            Learn JS
-            <input type="checkbox" checked />
-          </td>
-          <td>
-            <div class="green"></div>
-          </td>
-        </tr>
-        <tr>
-          <td class="td">
-            Create HTML Page
-            <input type="checkbox" />
-          </td>
-          <td>
-            <div class="red"></div>
-          </td>
-        </tr>
-        <tr>
-          <td class="td">
-            Walk the Dog
-            <input type="checkbox" />
-          </td>
-          <td>
-            <div class="red"></div>
-          </td>
-        </tr>
-        <tr>
-          <td class="td">
-            Watch the Match
-            <input type="checkbox" />
-          </td>
-          <td>
-            <div class="red"></div>
-          </td>
-        </tr>
-      </table>
+    <main class="home">
+      <div class="container">
+        <h1 class="tdl">To Do List</h1>
+        <table>
+          <tr>
+            <th>Tasks</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td class="td">
+              Learn JS
+              <input type="checkbox" checked />
+            </td>
+            <td>
+              <div class="green"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td">
+              Create HTML Page
+              <input type="checkbox" />
+            </td>
+            <td>
+              <div class="red"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td">
+              Walk the Dog
+              <input type="checkbox" />
+            </td>
+            <td>
+              <div class="red"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td">
+              Watch the Match
+              <input type="checkbox" />
+            </td>
+            <td>
+              <div class="red"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
     </main>
 
     <footer class="home">
-      <ul>
-        <li>Copyright &copy;</li>
-        <li>Contact Us: +969 0000</li>
-        <li>Social Media: Facebook - X - Instagram</li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li>Copyright &copy;</li>
+          <li class="contact"><i class="fa-solid fa-phone"></i> +969 0000</li>
+          <li class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

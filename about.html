@@ -3,60 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>toDo-List</title>
   </head>
   <body>
     <header>
-      <ul>
-        <li class="img"><img src="assets/todoList.png" alt="" /></li>
-        <li><a href="./index.html" target="_blank">Home Page</a></li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
+      <div class="container">
+        <i class="fa-regular fa-square-check"></i>
+        <ul>
+          <li><a href="./index.html" target="_blank">Home Page</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main>
-      <!-- Section One -->
-      <div class="sectionOne">
-        <img src="./assets/Personal_photo.png" alt="Photo" />
-        <div class="info">
-          <h1>Mohamad Yaman Katalan</h1>
-          <p>Full Stack Web Developer</p>
+    <main class="about">
+      <div class="container">
+        <!-- Section One -->
+        <div class="sectionOne">
+          <img src="./assets/Personal_photo.png" alt="Photo" />
+          <div class="info">
+            <h1>Mohamad Yaman Katalan</h1>
+            <p>Full Stack Web Developer</p>
+          </div>
         </div>
+        <!-- Section Two -->
+        <form action="">
+          <h1>Contact Me</h1>
+          <div>
+            <input id="" type="text" placeholder="Enter Your Name" />
+          </div>
+
+          <div>
+            <input id="" type="email" placeholder="Enter Your Email" />
+          </div>
+
+          <div>
+            <input id="" type="tel" placeholder="Enter Your Phone Number" />
+          </div>
+
+          <div class="textarea">
+            <textarea id="" placeholder="Enter A Message"></textarea>
+          </div>
+
+          <input type="submit" value="Send" />
+        </form>
       </div>
-      <!-- Section Two -->
-      <form action="">
-        <h1>Contact Me</h1>
-        <div>
-          <label for="name">Full Name</label>
-          <input id="name" type="text" />
-        </div>
-
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" />
-        </div>
-
-        <div>
-          <label for="number">Phone</label>
-          <input id="number" type="tel" />
-        </div>
-
-        <div class="textarea">
-          <label for="message">Message</label>
-          <textarea id="message"></textarea>
-        </div>
-
-        <input type="submit" value="Send" />
-      </form>
     </main>
 
     <footer>
-      <ul>
-        <li>Copyright &copy;</li>
-        <li>Contact Us: +969 0000</li>
-        <li>Social Media: Facebook - X - Instagram</li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li>Copyright &copy;</li>
+          <li>Contact Us: +969 0000</li>
+          <li class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
