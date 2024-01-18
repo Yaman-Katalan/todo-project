@@ -20,6 +20,20 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--main-color);
+    /* width: 15px; */
+    /* height: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7b5d05;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-one);
+}
+
 a {
     text-decoration: none;
 }
@@ -87,6 +101,13 @@ header .container ul li {
     padding: 25px 30px;
     position: relative;
     transition: 0.3s;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header .container ul li {
+        padding: 25px;
+    }
 }
 
 header .container ul li:hover {
@@ -115,9 +136,16 @@ header .container ul li:hover a {
 header .container ul li a {
     color: white;
     font-size: 20px;
+    /* text-align: center; */
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    header .container ul li a {
+        font-size: 15px;
+    }
 }
 
 
@@ -271,7 +299,7 @@ header .container ul li a {
 
     @media (max-width: 768px) {
         form div input {
-            width: 350px;
+            width: 320px;
         }
     }
 
@@ -316,7 +344,7 @@ header .container ul li a {
 
     @media (max-width: 768px) {
         form .textarea textarea {
-            width: 350px;
+            width: 320px;
         }
     }
     
@@ -407,13 +435,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
     transition: 0.3s;
  }
 
  footer .container ul li.social a:hover i {
     background-color: #ffc30e0c;
-    border-color: #ffc20e;
+    border-color: white;
     color: #ffc20e;
    
  }
