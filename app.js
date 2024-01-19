@@ -1,5 +1,8 @@
 "use strict";
 
+// #######################################################
+//                    Lab 5 Assignment
+// #######################################################
 // User Name
 let userName = prompt("Enter Your Name");
 
@@ -23,17 +26,19 @@ for (let i = 0; i < userName.length; i++) {
     i = -1;
   }
 }
-// __________________________________
+// ___________________________________________
 // Gender
 let userGender = prompt("Enter Your Gender", "male or female");
 
 if (userGender !== "male" && userGender !== "female") {
+  // To start looping ONLY if the user entered neither male nor female.
   for (; true; ) {
     userGender = prompt("you can either enter male or female");
     if (userGender === "male" || userGender === "female") break;
+    // To make sure the loop lasts till the user forced to enter male or female.
   }
 }
-// ______________________________
+// ___________________________________________
 // Age
 let userAge = prompt("Enter Your Age");
 // // // // // // // // //
@@ -66,7 +71,7 @@ for (; true; ) {
     }
   } else break;
 }
-// ____________________________________
+// _________________________________________________
 // Conformation
 let confirmation = confirm(
   "Click Ok to if you want to skip the welcoming message"
