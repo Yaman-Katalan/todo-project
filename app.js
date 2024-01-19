@@ -1,5 +1,8 @@
 "use strict";
 
+// #######################################################
+//                    Lab 5 Assignment
+// #######################################################
 // User Name
 let userName = prompt("Enter Your Name");
 
@@ -23,17 +26,19 @@ for (let i = 0; i < userName.length; i++) {
     i = -1;
   }
 }
-// __________________________________
+// ___________________________________________
 // Gender
 let userGender = prompt("Enter Your Gender", "male or female");
 
 if (userGender !== "male" && userGender !== "female") {
+  // To start looping ONLY if the user entered neither male nor female.
   for (; true; ) {
     userGender = prompt("you can either enter male or female");
     if (userGender === "male" || userGender === "female") break;
+    // To make sure the loop lasts till the user forced to enter male or female.
   }
 }
-// ______________________________
+// ___________________________________________
 // Age
 let userAge = prompt("Enter Your Age");
 // // // // // // // // //
@@ -66,7 +71,7 @@ for (; true; ) {
     }
   } else break;
 }
-// ____________________________________
+// _________________________________________________
 // Conformation
 let confirmation = confirm(
   "Click Ok to if you want to skip the welcoming message"
@@ -79,3 +84,41 @@ if (userGender === "female") x = "Ms";
 if (confirmation === false) {
   alert(`Welcome ${x} ${userName}, Your Age is ${userAge}.`);
 }
+
+// #######################################################
+//                    Lab 6 Assignment
+// #######################################################
+
+let taskOne, taskTwo, taskThree;
+
+taskOne = prompt("Did you finish your first task? Yes/No");
+taskTwo = prompt("Did you finish your second task? Yes/No");
+taskThree = prompt("Did you finish your Third task? Yes/No");
+// // // // // // // // //
+function ifInvalid(task) {
+  if (task === null || task === "") task = "invalid";
+  return task;
+}
+taskOne = ifInvalid(taskOne);
+taskTwo = ifInvalid(taskTwo);
+taskThree = ifInvalid(taskThree);
+
+let arr = [];
+// // // // // // // // //
+function pushInto(arr, task) {
+  return arr.push(task);
+}
+pushInto(arr, userName);
+pushInto(arr, userGender);
+pushInto(arr, userAge);
+pushInto(arr, taskOne);
+pushInto(arr, taskTwo);
+pushInto(arr, taskThree);
+// // // // // // // // //
+function traverseArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(`Index ${i}: ${arr[i]}`);
+  }
+}
+
+traverseArr(arr);
